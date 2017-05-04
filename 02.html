@@ -1,0 +1,49 @@
+
+<html>
+<head>
+<title>注册页面</title>
+</head>
+
+<body>
+<form name="form1" action="register.jsp" method="post">
+   <fieldset>
+     <legend>基本信息</legend>
+   名称：<input name="userName" type="text"/><br/>
+   密码：<input name="userPwd" type="password"/><br/>
+   性别：<label><input name="userSex" type="radio" value="man"/>男</label>
+  <label> <input name="userSex" type="radio" value="woman"/>女</label>
+   <br/>
+   </fieldset>
+   爱好：<input name="userLike" type="checkbox" value="唱歌"/>唱歌
+   <label><input name="userLike" type="checkbox" value="游泳"/>游泳</label>
+   <input name="userLike" type="checkbox" value="旅游" id="ly"/><label for="ly">旅游</label>
+   <input name="userLike" type="checkbox" value="跑步"/>跑步
+   <br/>
+   头像：
+   <input name="userPhoto" type="file" /><br/>
+
+    城市：
+	<select name="city">
+	   <option value="fz">福州</option>
+	   <option value="xm">厦门</option>
+	   <option value="qz">泉州</option>
+	   <option value="zz">漳州</option>
+	</select>
+<br/>
+   简介：
+   <textarea name="jianjie" rows="8" cols="60"></textarea>
+<br/>
+<input type="checkbox" name="xieyi" onClick="document.form1.sub.disabled=!this.checked"/>同意本站用户协议
+<br/>
+   <input name="sub" type="submit" disabled="disabled" value="提交"/>
+   
+   <input name="ret" type="reset" value="重置"/>
+   <input name="sub" type="image" src="images/contactme.gif"/>
+
+   <input type="button" value="普通按钮" onClick="alert('您好！')"/>
+   <br/>
+
+</form>
+<a href="01.html#daohang">01的导航</a>
+</body>
+</html>
